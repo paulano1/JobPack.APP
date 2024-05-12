@@ -65,7 +65,7 @@ export function UserNav() {
           </DropdownMenuGroup> */}
           <DropdownMenuSeparator />
           <DropdownMenuItem onClick={() => {
-            firebaseSignOut(auth).then(()=>{window.location.href = "/auth/login"});
+            firebaseSignOut(auth).then(()=>{window.location.href = "/"});
             }}>
             Log out
             <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>

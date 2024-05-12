@@ -25,7 +25,7 @@ export const Hero = () => {
         </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-    It is common knowledge that job applications have become a numbers game, and searching through hundreds of job boards is personally exhausting. Additionally, I've seen a trend where companies close job postings within a week or two. This motivated me to create a tool that notifies me as soon as a job is posted. This project is starting as a personal weekend project, but if others find it useful, I plan to dedicate more time to it and make it open-source.
+    It is common knowledge that job applications have become a numbers game, and searching through hundreds of job boards is personally exhausting. Additionally, I've seen a trend where companies close job postings within a week or two. This motivated me to create a tool that notifies me as soon as a job is posted and aggregate jobs from all over the internet. This project is starting as a personal weekend project, but if others find it useful, I plan to dedicate more time to it and make it open-source.
 </p>
 <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
     We aggregate jobs from the internet for you

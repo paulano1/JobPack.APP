@@ -20,7 +20,7 @@ export default function GoogleSignInButton() {
       await AddUser(user.uid, user.displayName ?? 'User');
       
       //Navigate to the dashboard or any other page
-      window.location.href = '/dashboard';
+      window.location.href = '/dashboard/filter';
 
     } catch (error) {
       console.error('Error signing in with Google:');

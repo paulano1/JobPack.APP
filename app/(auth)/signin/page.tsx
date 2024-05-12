@@ -7,7 +7,7 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export const metadata: Metadata = {
   title: "Authentication",
-  description: "Authentication forms built using the components.",
+  description: "Create an account or sign in to JobPack.",
 };
 
 export default function AuthenticationPage() {
