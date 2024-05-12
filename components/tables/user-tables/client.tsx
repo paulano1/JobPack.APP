@@ -45,11 +45,18 @@ export default function Component({job, openModal} : {job: Job, openModal: () =>
         <p className="text-gray-600 dark:text-gray-300 mb-4" dangerouslySetInnerHTML={{__html: job.description}}>
         </p>
         </ScrollArea>
-        <Link className="inline-flex items-center text-primary hover:underline pt-7" href={job.jobUrlDirect == "NaN" ? job.jobUrl : job.jobUrlDirect} target="_blank"  rel="noopener noreferrer" onClick={openModal}>
-        <Button>
-        View Job <ChevronRight className="h-4 w-4" />
-        </Button>
+        <Link 
+          className="inline-flex items-center text-primary hover:underline pt-7" 
+          href={job.jobUrlDirect && job.jobUrlDirect !== "NaN" ? job.jobUrlDirect : job.jobUrl ? job.jobUrl : "#"} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          onClick={openModal}
+        >
+          <Button>
+            View Job <ChevronRight className="h-4 w-4" />
+          </Button>
         </Link>
+
       </div>
     </div>
   )
@@ -120,7 +127,7 @@ export const UserClient: React.FC<ProductsClientProps> = ({ data, setData }) => 
           <Heading title={`Jobs (${data.length})`} description="List of Jobs that were found" />
           <Button
             className="text-xs md:text-sm"
-            onClick={() => router.push(`/dashboard/user/new`)}
+            onClick={() => router.push(`/dashboard/filter`)}
             >
             <Plus className="mr-2 h-4 w-4" /> Search Filter
         </Button>
